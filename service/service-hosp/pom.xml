@@ -6,23 +6,16 @@
         <artifactId>yygh-parent</artifactId>
         <groupId>com.cheng.yygh</groupId>
         <version>1.0</version>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>service</artifactId>
-    <packaging>pom</packaging>
     <version>1.0</version>
+    <artifactId>service-hosp</artifactId>
+    <packaging>jar</packaging>
+    <name>service-hosp</name>
+    <description>service-hosp</description>
+
     <dependencies>
-        <dependency>
-            <groupId>com.cheng.yygh</groupId>
-            <artifactId>service-util</artifactId>
-            <version>1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.cheng.yygh</groupId>
-            <artifactId>entity</artifactId>
-            <version>1.0</version>
-        </dependency>
         <!--web-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -59,33 +52,21 @@
 <!--            <groupId>com.alibaba.cloud</groupId>-->
 <!--            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>-->
 <!--        </dependency>-->
+        <dependency>
+            <groupId>com.cheng.yygh</groupId>
+            <artifactId>entity</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
+
     <build>
+        <finalName>service-hosp</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-        <resources>
-            <resource>
-                <directory>src/main/java</directory>
-                <includes>
-                    <include>**/*.yml</include>
-                    <include>**/*.properties</include>
-                    <include>**/*.xml</include>
-                </includes>
-                <filtering>false</filtering>
-            </resource>
-            <resource>
-                <directory>src/main/resources</directory>
-                <includes> <include>**/*.yml</include>
-                    <include>**/*.properties</include>
-                    <include>**/*.xml</include>
-                </includes>
-                <filtering>false</filtering>
-            </resource>
-        </resources>
     </build>
 
 
