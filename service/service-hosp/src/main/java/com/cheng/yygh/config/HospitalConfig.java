@@ -10,5 +10,12 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @MapperScan("com.cheng.yygh.mapper")
 public class HospitalConfig {
+    /**
+     * 分页插件
+     */
+//    @Bean
+//    public PaginationInterceptor paginationInterceptor() {
+//        return new PaginationInterceptor();
+//    }
 
 }

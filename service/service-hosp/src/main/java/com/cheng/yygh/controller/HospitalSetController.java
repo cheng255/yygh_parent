@@ -20,6 +20,8 @@ import java.util.Random;
  * @author nuonuo
  * @create 2021-09-17 18:44
  */
+
+@CrossOrigin
 @Api(tags = "医院设置管理")
 @RestController
 @RequestMapping("/admin/hosp/hospitalSet")

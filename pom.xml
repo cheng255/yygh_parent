@@ -9,6 +9,7 @@
         <module>service</module>
         <module>service/service-hosp</module>
         <module>entity</module>
+        <module>service-cmn</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
